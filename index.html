@@ -4,80 +4,84 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <title>Sign Up</title>
   </head>
   <body>
-    <form id="form" method="post">
-      <div class="titr">form</div>
-      <div id="main">
+    <main>
+      <h1 class="titr">Sign Up Form</h1>
+      <form id="form" method="post">
         <div class="item red">
-          <labal>firstName</labal>
+          <div>First Name</div>
           <input type="text" id="f-name" placeholder="firstName" />
           <div class="error error-f-name"></div>
         </div>
 
         <div class="item">
-          <labal>lastName</labal>
+          <div>Last Name</div>
           <input type="text" id="lastName" placeholder="lastName" />
           <div class="error error-lastName"></div>
         </div>
 
         <div class="item">
-          <labal>phone number</labal>
+          <div>Phone Number</div>
           <input type="tel" placeholder="phone number" id="phone" />
           <div class="error error-phone"></div>
         </div>
         <div class="item">
-          <labal>password</labal>
+          <div>Password</div>
           <input type="password" placeholder="password" id="password" />
           <div class="error error-password"></div>
         </div>
         <div class="item">
-          <labal>Email</labal>
+          <div>Email</div>
           <input
             id="email"
             type="email"
             placeholder="email"
-            value="fereshtejafari@gmail.com"
           />
           <div class="error  error-email"></div>
         </div>
         <div class="gender item">
-          <labal for="gder-male">male</labal>
+          <div for="">Gender</div>
+          
           <input type="radio" name="gender" id="gder-male" value="male" />
-          <labal for="gder-fmale">fmale</labal>
+          <labal for="gder-male">Male</labal>
+          
           <input type="radio" name="gender" id="gder-fmale" value="fmale" />
-          <labal for="no-gender">fmale</labal>
+          <labal for="gder-fmale">Female</labal>
+          
           <input type="radio" name="gender" id="no-gender" value="no-gender" />
+          <labal for="no-gender">There</labal>
           <div class="error  error-gender"></div>
         </div>
         <div class="checkbox item">
-          <div class="text-m">mharat</div>
-          <labal>html</labal>
+          <div class="text-m">Skills</div>
+          <labal>Html</labal>
           <input type="checkbox" />
-          <labal>css</labal>
+          <labal>Css</labal>
           <input type="checkbox" />
-          <labal>js</labal>
+          <labal>JavaScript</labal>
           <input type="checkbox" />
         </div>
         <div class="city item">
-          <div class="text-city">city</div>
+          <div class="text-city">City</div>
           <select>
-            <option>tehran</option>
-            <option>esfahan</option>
-            <option>shiraz</option>
+            <option>Tehran</option>
+            <option>Esfahan</option>
+            <option>Shiraz</option>
           </select>
         </div>
         <div class="text item">
+          <label for="">Message</label>
           <textarea cols="50" rows="15"></textarea>
           <div class="error  error-text"></div>
         </div>
         <div class="sub item">
           <button onclick="signup(event)">send</button>
         </div>
-      </div>
-    </dform>
-    <script src="script.js"></script>
+      </form>
+    </main>
+    <script src="assets/js/script.js"></script>
   </body>
 </html>

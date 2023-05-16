@@ -1,15 +1,14 @@
-﻿#form #main{
+﻿main{
     border:3px solid black;
     width: 500px;
     height: auto;
     
-
 }
 #form{margin: 100px;}
-#form #main{margin: 20px;}
-#form #main .item{ margin: 20px;padding: 10px;}
-#form #main .text-city{padding: 10px;}
-#form #main .checkbox .text-m{margin: 10px;}
+#form{margin: 20px;}
+#form  .item{ margin: 20px;padding: 10px;}
+#form .text-city{padding: 10px;}
+#form .checkbox .text-m{margin: 10px;}
 
 #form .error{
     color: rgb(124, 0, 0);
