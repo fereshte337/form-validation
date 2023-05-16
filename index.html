@@ -1,0 +1,83 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form id="form" method="post">
+      <div class="titr">form</div>
+      <div id="main">
+        <div class="item red">
+          <labal>firstName</labal>
+          <input type="text" id="f-name" placeholder="firstName" />
+          <div class="error error-f-name"></div>
+        </div>
+
+        <div class="item">
+          <labal>lastName</labal>
+          <input type="text" id="lastName" placeholder="lastName" />
+          <div class="error error-lastName"></div>
+        </div>
+
+        <div class="item">
+          <labal>phone number</labal>
+          <input type="tel" placeholder="phone number" id="phone" />
+          <div class="error error-phone"></div>
+        </div>
+        <div class="item">
+          <labal>password</labal>
+          <input type="password" placeholder="password" id="password" />
+          <div class="error error-password"></div>
+        </div>
+        <div class="item">
+          <labal>Email</labal>
+          <input
+            id="email"
+            type="email"
+            placeholder="email"
+            value="fereshtejafari@gmail.com"
+          />
+          <div class="error  error-email"></div>
+        </div>
+        <div class="gender item">
+          <labal for="gder-male">male</labal>
+          <input type="radio" name="gender" id="gder-male" value="male" />
+          <labal for="gder-fmale">fmale</labal>
+          <input type="radio" name="gender" id="gder-fmale" value="fmale" />
+          <labal for="no-gender">fmale</labal>
+          <input type="radio" name="gender" id="no-gender" value="no-gender" />
+          <div class="error  error-gender"></div>
+        </div>
+        <div class="checkbox item">
+          <div class="text-m">mharat</div>
+          <labal>html</labal>
+          <input type="checkbox" />
+          <labal>css</labal>
+          <input type="checkbox" />
+          <labal>js</labal>
+          <input type="checkbox" />
+        </div>
+        <div class="city item">
+          <div class="text-city">city</div>
+          <select>
+            <option>tehran</option>
+            <option>esfahan</option>
+            <option>shiraz</option>
+          </select>
+        </div>
+        <div class="text item">
+          <textarea cols="50" rows="15"></textarea>
+          <div class="error  error-text"></div>
+        </div>
+        <div class="sub item">
+          <button onclick="signup(event)">send</button>
+        </div>
+      </div>
+    </dform>
+    <script src="script.js"></script>
+  </body>
+</html>

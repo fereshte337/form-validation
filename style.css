@@ -1,0 +1,17 @@
+﻿#form #main{
+    border:3px solid black;
+    width: 500px;
+    height: auto;
+    
+
+}
+#form{margin: 100px;}
+#form #main{margin: 20px;}
+#form #main .item{ margin: 20px;padding: 10px;}
+#form #main .text-city{padding: 10px;}
+#form #main .checkbox .text-m{margin: 10px;}
+
+#form .error{
+    color: rgb(124, 0, 0);
+    background-color: rgb(255, 208, 208);
+}
