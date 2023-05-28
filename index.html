@@ -8,80 +8,88 @@
     <title>Sign Up</title>
   </head>
   <body>
-    <main>
-      <h1 class="titr">Sign Up Form</h1>
-      <form id="form" method="post">
-        <div class="item red">
-          <div>First Name</div>
-          <input type="text" id="f-name" placeholder="firstName" />
-          <div class="error error-f-name"></div>
+    <div id="container">
+      <div class="page">
+        <div class="page-lft">
+          <img src="assets/images/download (3).jpg" alt="pic" width="300px" height="1000px" />
         </div>
+        <main>
+          <h1 class="titr">Sign Up Form</h1>
+          <form id="form" method="post">
+            <div class="item red">
+              <div>First Name</div>
+              <input type="text" id="f-name" placeholder="firstName" />
+              <div class="error error-f-name"></div>
+            </div>
 
-        <div class="item">
-          <div>Last Name</div>
-          <input type="text" id="lastName" placeholder="lastName" />
-          <div class="error error-lastName"></div>
-        </div>
+            <div class="item">
+              <div>Last Name</div>
+              <input type="text" id="lastName" placeholder="lastName" />
+              <div class="error error-lastName"></div>
+            </div>
 
-        <div class="item">
-          <div>Phone Number</div>
-          <input type="tel" placeholder="phone number" id="phone" />
-          <div class="error error-phone"></div>
-        </div>
-        <div class="item">
-          <div>Password</div>
-          <input type="password" placeholder="password" id="password" />
-          <div class="error error-password"></div>
-        </div>
-        <div class="item">
-          <div>Email</div>
-          <input
-            id="email"
-            type="email"
-            placeholder="email"
-          />
-          <div class="error  error-email"></div>
-        </div>
-        <div class="gender item">
-          <div for="">Gender</div>
-          
-          <input type="radio" name="gender" id="gder-male" value="male" />
-          <labal for="gder-male">Male</labal>
-          
-          <input type="radio" name="gender" id="gder-fmale" value="fmale" />
-          <labal for="gder-fmale">Female</labal>
-          
-          <input type="radio" name="gender" id="no-gender" value="no-gender" />
-          <labal for="no-gender">There</labal>
-          <div class="error  error-gender"></div>
-        </div>
-        <div class="checkbox item">
-          <div class="text-m">Skills</div>
-          <labal>Html</labal>
-          <input type="checkbox" />
-          <labal>Css</labal>
-          <input type="checkbox" />
-          <labal>JavaScript</labal>
-          <input type="checkbox" />
-        </div>
-        <div class="city item">
-          <div class="text-city">City</div>
-          <select>
-            <option>Tehran</option>
-            <option>Esfahan</option>
-            <option>Shiraz</option>
-          </select>
-        </div>
-        <div class="text item">
-          <label for="">Message</label>
-          <textarea cols="50" rows="15"></textarea>
-          <div class="error  error-text"></div>
-        </div>
-        <div class="sub item">
-          <button onclick="signup(event)">send</button>
-        </div>
-      </form>
-    </main>
+            <div class="item">
+              <div>Phone Number</div>
+              <input type="tel" placeholder="phone number" id="phone" />
+              <div class="error error-phone"></div>
+            </div>
+            <div class="item">
+              <div>Password</div>
+              <input type="password" placeholder="password" id="password" />
+              <div class="error error-password"></div>
+            </div>
+            <div class="item">
+              <div>Email</div>
+              <input id="email" type="email" placeholder="email" />
+              <div class="error error-email"></div>
+            </div>
+            <div class="gender item">
+              <div for="">Gender</div>
+
+              <input type="radio" name="gender" id="gder-male" value="male" />
+              <labal for="gder-male">Male</labal>
+
+              <input type="radio" name="gender" id="gder-fmale" value="fmale" />
+              <labal for="gder-fmale">Female</labal>
+
+              <input
+                type="radio"
+                name="gender"
+                id="no-gender"
+                value="no-gender"
+              />
+              <labal for="no-gender">There</labal>
+              <div class="error error-gender"></div>
+            </div>
+            <div class="checkbox item">
+              <div class="text-m">Skills</div>
+              <labal>Html</labal>
+              <input type="checkbox" />
+              <labal>Css</labal>
+              <input type="checkbox" />
+              <labal>JavaScript</labal>
+              <input type="checkbox" />
+            </div>
+            <div class="city item">
+              <div class="text-city">City</div>
+              <select>
+                <option>Tehran</option>
+                <option>Esfahan</option>
+                <option>Shiraz</option>
+              </select>
+            </div>
+            <div class="text item">
+              <label for="">Message</label>
+              <textarea cols="50" rows="15"></textarea>
+              <div class="error error-text"></div>
+            </div>
+            <div class="sub item">
+              <button onclick="signup(event)">send</button>
+            </div>
+          </form>
+        </main>
+      </div>
+    </div>
     <script src="assets/js/script.js"></script>
   </body>
 </html>
